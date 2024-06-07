@@ -11,7 +11,10 @@
     font-size: 3rem;
     margin-bottom: 30px;
     
-    .cuadros_container2 {
+   
+ }
+
+ .cuadros_container2 {
         /*aca tambien estan los cuadros de Formas de envios*/
         display: flex;
         justify-content: space-between;
@@ -21,19 +24,22 @@
       /*flex-wrap automatisa que no desborde nuestro body*/
         flex-wrap: wrap;
 
-        .carousel-inner {
+        
+        
+      }
+
+ .carousel-inner {
             position: relative;
             width: 100%;
             overflow: hidden;
             max-height: 500px; /* Ajusta esto al valor máximo de altura que desees */
         
-            .carousel-inner img {
+            
+        }
+
+ .carousel-inner img {
                 width: 100%;
                 height: auto; /* Mantiene la proporción de la imagen */
                 max-height: 500px; /* Asegura que las imágenes no excedan esta altura */
                 object-fit: cover; /* Recorta la imagen si es necesario para llenar el área */
             }
-        }
-        
-      }
- }

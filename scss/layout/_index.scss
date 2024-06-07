@@ -1,0 +1,84 @@
+.cuadro {
+    width: 250px;
+    height: 370px;
+    background-color: rgb(255, 168, 7);
+    border: 1px solid black;
+    margin-right: 20px; /* Espacio entre los cuadros */
+    overflow: hidden; /* Oculta el contenido que excede los límites del cuadro */
+}
+
+.cuadros-container {
+    display: flex;
+   flex-wrap: wrap; /*para que los cuadros se pongan uno arriba del otro cuando se achica la pantalla*/
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 80px; /* Espacio alrededor de los cuadros */
+   margin-top: 10px; /* Desplazamiento hacia arriba */
+   overflow: hidden; /* Oculta el contenido que excede los límites del cuadro */
+   padding-top: 10px;
+}
+.imagen-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inner-image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta el contenido de la imagen que excede los límites del contenedor */
+}
+
+.inner-image-container img {
+    width: 100%; /* Ancho de la imagen dentro del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin deformarla */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+}
+
+
+
+
+
+//seccion de textos pequeños
+.home {
+    background-color:orange;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    
+}
+
+.in-flex{
+        color: white;
+        flex: 1;
+        min-width: 300px;
+    
+        
+
+    } 
+
+.in-flex:first-child{
+            flex: 2;
+            padding: 25px;
+            background-color: hsl(0, 0%, 0%);
+            margin: 20px;
+            margin-bottom: 0px;
+            border-radius: 10px;
+
+           
+
+        } 
+
+ .in-flex div{
+                padding: 25px;
+                background-color: hsl(0, 0%, 0%);
+                margin: 20px;
+                border-radius: 10px;
+            }

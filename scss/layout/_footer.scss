@@ -1,0 +1,28 @@
+.contenedor{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color:orange;
+    display: flex;
+    height: 40px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+/* Estilos de la lista */
+li{
+    list-style: none;
+}
+/* Estilos de los enlaces */
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/*hover sirve para cambiar los colores de los botones cuando los estas seleccionenado en este caso los votones con likns, esto es parte de una seuda clase la cual cambia sus estados*/
+a:hover{
+    color: orange;
+}

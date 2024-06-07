@@ -17,68 +17,176 @@ margin: 5px; /* Ajusta este margen para agregar separación entre las tarjetas *
 
 .card-a-a, .card-b-b, .card-c-c p {
 
-color: rgb(255, 255, 255); /* Ajusta el color del texto si es necesario */
-text-align: center;
+color: rgb(0, 0, 0); /* Ajusta el color del texto si es necesario */
+
 }
 
 .card-a-a {
-
+display: flex;
+align-items: center;
 width: 75%;
 height: 154px;
-border-radius: 30px;
-background: hsl(208, 100%, 89%);
+border-radius: 10px;
+background: orange;
 box-shadow: 15px 15px 30px rgb(25, 25, 25),
           -15px -15px 30px rgb(60, 60, 60);
-
+padding: 10px;
 
 }
 
+.card-a-a img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-a-a p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
+  
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Alinea los párrafos en columna */
+  flex: 1;
+}
+
+.text-container p {
+  margin: 0;
+  padding-left: 5px; /* Añade un poco de padding a la izquierda */
+}
+
+
 .card-b-b {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
 width: 75%;
 height: 154px;
-border-radius: 30px;
-background: hsl(208, 100%, 89%);
+border-radius: 10px;
+background: orange;
 box-shadow: 15px 15px 30px rgb(25, 25, 25),
           -15px -15px 30px rgb(60, 60, 60);
 
+padding: 10px;
+display: flex;
+align-items: center;
+}
 
+.card-b-b img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-b-b p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
+  
 }
 
 .card-c-c {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
 width: 75%;
 height: 154px;
-border-radius: 30px;
-background: hsl(208, 100%, 89%);
+border-radius: 10px;
+background: orange;
 box-shadow: 15px 15px 30px rgb(25, 25, 25),
           -15px -15px 30px rgb(60, 60, 60);
+padding: 10px;
+display: flex;
+align-items: center;
 
+}
 
+.card-c-c img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-c-c p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
+  
 }
 
 .card-c-d {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
 width: 75%;
 height: 154px;
-border-radius: 30px;
-background: hsl(208, 100%, 89%);
+border-radius: 10px;
+background: orange;
 box-shadow: 15px 15px 30px rgb(25, 25, 25),
           -15px -15px 30px rgb(60, 60, 60);
+padding: 10px;
+display: flex;
+align-items: center;
+}
+.card-c-d img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
 
-
+.card-c-d p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
+  
 }
 
 .card-c-e {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
 width: 75%;
 height: 154px;
-border-radius: 30px;
-background: hsl(208, 100%, 89%);
+border-radius: 10px;
+background: orange;
 box-shadow: 15px 15px 30px rgb(25, 25, 25),
           -15px -15px 30px rgb(60, 60, 60);
+padding: 10px;
+display: flex;
+align-items: center;
+
+}
 
 
+
+//prueva 
+.card-a-a, .card-b-b, .card-c-c, .card-c-d, .card-c-e {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 154px;
+  border-radius: 10px;
+  background: orange;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+  margin-top: 17px;
+}
+
+.card-a-a img, .card-b-b img, .card-c-c img, .card-c-d img, .card-c-e img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.text-container p {
+  margin: 0;
+  padding-left: 5px;
 }
 
 

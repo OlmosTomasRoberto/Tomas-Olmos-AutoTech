@@ -1,48 +1,24 @@
 @charset "UTF-8";
-.home {
-  background-color: orange;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 25px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-.home .in-flex {
-  color: white;
-  flex: 1;
-  min-width: 300px;
-}
-.home .in-flex .in-flex:first-child {
-  flex: 2;
-  padding: 25px;
-  background-color: hsl(0, 0%, 0%);
-  margin: 20px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-}
-.home .in-flex .in-flex:first-child .in-flex div {
-  padding: 25px;
-  background-color: hsl(0, 0%, 0%);
-  margin: 20px;
-  border-radius: 10px;
-}
-
 /*HEADER*/
 header {
   position: relative;
   /*menu*/
 }
-header .bg-light {
+
+.bg-light {
   background: rgb(255, 196, 0);
   background: linear-gradient(90deg, rgba(255, 196, 0, 0.9640231092) 5%, rgba(255, 255, 255, 0.8603816527) 96%);
 }
-header .bg-light nav .navbar-light .navbar-nav .nav-link {
+
+.navbar-light .navbar-nav .nav-link {
   color: rgb(0, 0, 0);
 }
-header .bg-light nav .navbar-light .navbar-nav .nav-link .navbar-light .navbar-nav .nav-link.disabled {
+
+.navbar-light .navbar-nav .nav-link.disabled {
   color: rgb(0, 0, 0);
 }
-header .bg-light nav .navbar-light .navbar-nav .nav-link .navbar-light .navbar-nav .nav-link.disabled a:hover {
+
+a:hover {
   color: orange;
 }
 
@@ -74,7 +50,8 @@ section#hero {
   text-align: center;
   color: #fff;
 }
-section#hero #hero h1 {
+
+#hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -95,52 +72,159 @@ section#hero #hero h1 {
 }
 
 .card-a-a, .card-b-b, .card-c-c p {
-  color: rgb(255, 255, 255); /* Ajusta el color del texto si es necesario */
-  text-align: center;
+  color: rgb(0, 0, 0); /* Ajusta el color del texto si es necesario */
 }
 
 .card-a-a {
+  display: flex;
+  align-items: center;
   width: 75%;
   height: 154px;
-  border-radius: 30px;
-  background: hsl(208, 100%, 89%);
+  border-radius: 10px;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+}
+
+.card-a-a img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-a-a p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Alinea los párrafos en columna */
+  flex: 1;
+}
+
+.text-container p {
+  margin: 0;
+  padding-left: 5px; /* Añade un poco de padding a la izquierda */
 }
 
 .card-b-b {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
   width: 75%;
   height: 154px;
-  border-radius: 30px;
-  background: hsl(208, 100%, 89%);
+  border-radius: 10px;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-b-b img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-b-b p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
 }
 
 .card-c-c {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
   width: 75%;
   height: 154px;
-  border-radius: 30px;
-  background: hsl(208, 100%, 89%);
+  border-radius: 10px;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-c-c img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-c-c p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
 }
 
 .card-c-d {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
   width: 75%;
   height: 154px;
-  border-radius: 30px;
-  background: hsl(208, 100%, 89%);
+  border-radius: 10px;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-c-d img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.card-c-d p {
+  margin: 0;
+  flex: 1;
+  padding-left: 85px; /* Añade un poco de padding a la izquierda */
 }
 
 .card-c-e {
-  margin-top: 40px; /* Empuja el párrafo hacia la parte inferior */
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
   width: 75%;
   height: 154px;
-  border-radius: 30px;
-  background: hsl(208, 100%, 89%);
+  border-radius: 10px;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-a-a, .card-b-b, .card-c-c, .card-c-d, .card-c-e {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 154px;
+  border-radius: 10px;
+  background: orange;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  padding: 10px;
+  margin-top: 17px;
+}
+
+.card-a-a img, .card-b-b img, .card-c-c img, .card-c-d img, .card-c-e img {
+  max-width: 145px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.text-container p {
+  margin: 0;
+  padding-left: 5px;
 }
 
 /*Servicio*/
@@ -215,30 +299,49 @@ section#hero #hero h1 {
 .card-1, .card-2, .card-3 {
   margin: 10px; /* Ajusta este margen para agregar separación entre las tarjetas */
 }
-.card-1 .card-1 p, .card-1 .card-2 p, .card-1 .card-3 p, .card-2 .card-1 p, .card-2 .card-2 p, .card-2 .card-3 p, .card-3 .card-1 p, .card-3 .card-2 p, .card-3 .card-3 p {
-  margin-top: 210px; /* Empuja el párrafo hacia la parte inferior */
-  color: white; /* Ajusta el color del texto si es necesario */
-  text-align: center;
+
+.card-1 img, .card-2 img, .card-3 img {
+  max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+  border-radius: 10px;
 }
-.card-1 .card-1 p .card-1, .card-1 .card-2 p .card-1, .card-1 .card-3 p .card-1, .card-2 .card-1 p .card-1, .card-2 .card-2 p .card-1, .card-2 .card-3 p .card-1, .card-3 .card-1 p .card-1, .card-3 .card-2 p .card-1, .card-3 .card-3 p .card-1 {
+
+.card-2 img, .card-3 img {
+  max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.card-1 p, .card-2 p, .card-3 p {
+  margin: 0;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.card-1 {
   width: 190px;
   height: 254px;
   border-radius: 30px;
-  background: #212121;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
-.card-1 .card-1 p .card-1 .card-2, .card-1 .card-2 p .card-1 .card-2, .card-1 .card-3 p .card-1 .card-2, .card-2 .card-1 p .card-1 .card-2, .card-2 .card-2 p .card-1 .card-2, .card-2 .card-3 p .card-1 .card-2, .card-3 .card-1 p .card-1 .card-2, .card-3 .card-2 p .card-1 .card-2, .card-3 .card-3 p .card-1 .card-2 {
+
+.card-2 {
   width: 190px;
   height: 254px;
   border-radius: 30px;
-  background: #e90909;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
-.card-1 .card-1 p .card-1 .card-2 .card-3, .card-1 .card-2 p .card-1 .card-2 .card-3, .card-1 .card-3 p .card-1 .card-2 .card-3, .card-2 .card-1 p .card-1 .card-2 .card-3, .card-2 .card-2 p .card-1 .card-2 .card-3, .card-2 .card-3 p .card-1 .card-2 .card-3, .card-3 .card-1 p .card-1 .card-2 .card-3, .card-3 .card-2 p .card-1 .card-2 .card-3, .card-3 .card-3 p .card-1 .card-2 .card-3 {
+
+.card-3 {
   width: 190px;
   height: 254px;
   border-radius: 30px;
-  background: #44fa69;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
 
@@ -254,7 +357,8 @@ section#hero #hero h1 {
   font-size: 3rem;
   margin-bottom: 30px;
 }
-.t-pago .cuadros_container2 {
+
+.cuadros_container2 {
   /*aca tambien estan los cuadros de Formas de envios*/
   display: flex;
   justify-content: space-between;
@@ -263,13 +367,15 @@ section#hero #hero h1 {
   /*flex-wrap automatisa que no desborde nuestro body*/
   flex-wrap: wrap;
 }
-.t-pago .cuadros_container2 .carousel-inner {
+
+.carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
   max-height: 500px; /* Ajusta esto al valor máximo de altura que desees */
 }
-.t-pago .cuadros_container2 .carousel-inner .carousel-inner img {
+
+.carousel-inner img {
   width: 100%;
   height: auto; /* Mantiene la proporción de la imagen */
   max-height: 500px; /* Asegura que las imágenes no excedan esta altura */
@@ -277,15 +383,6 @@ section#hero #hero h1 {
 }
 
 /*Formas de envio*/
-.informacion-de-productos-p {
-  color: #fff;
-  margin-top: 270px;
-  margin-left: 2px;
-  font-size: 15px;
-  justify-content: center; /* Centra horizontalmente */
-  align-content: center; /* Centra verticalmente */
-}
-
 .contenedor-card-a {
   display: flex;
   flex-wrap: wrap;
@@ -296,35 +393,176 @@ section#hero #hero h1 {
   overflow: hidden;
   padding-top: 50px;
 }
-.contenedor-card-a .card-a, .contenedor-card-a .card-b, .contenedor-card-a .card-c {
+
+.card-a, .card-b, .card-c {
   margin: 10px; /* Ajusta este margen para agregar separación entre las tarjetas */
 }
-.contenedor-card-a .card-a .card-a p, .contenedor-card-a .card-a .card-b p, .contenedor-card-a .card-a .card-c p, .contenedor-card-a .card-b .card-a p, .contenedor-card-a .card-b .card-b p, .contenedor-card-a .card-b .card-c p, .contenedor-card-a .card-c .card-a p, .contenedor-card-a .card-c .card-b p, .contenedor-card-a .card-c .card-c p {
-  margin-top: 210px; /* Empuja el párrafo hacia la parte inferior */
+
+.card-a p, .card-b p, .card-c p {
+  margin-top: 10px; /* Empuja el párrafo hacia la parte inferior */
   color: rgb(10, 7, 7); /* Ajusta el color del texto si es necesario */
   text-align: center;
-  /*boca boca bocaaa*/
 }
-.contenedor-card-a .card-a .card-a p .card-a, .contenedor-card-a .card-a .card-b p .card-a, .contenedor-card-a .card-a .card-c p .card-a, .contenedor-card-a .card-b .card-a p .card-a, .contenedor-card-a .card-b .card-b p .card-a, .contenedor-card-a .card-b .card-c p .card-a, .contenedor-card-a .card-c .card-a p .card-a, .contenedor-card-a .card-c .card-b p .card-a, .contenedor-card-a .card-c .card-c p .card-a {
+
+.card-a p {
+  margin-top: 39px; /* Empuja el párrafo hacia la parte inferior */
+  color: rgb(10, 7, 7); /* Ajusta el color del texto si es necesario */
+  text-align: center;
+}
+
+.card-a {
   width: 190px;
   height: 254px;
   border-radius: 30px;
-  background: #78bdfa;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
-.contenedor-card-a .card-a .card-a p .card-a .card-b, .contenedor-card-a .card-a .card-b p .card-a .card-b, .contenedor-card-a .card-a .card-c p .card-a .card-b, .contenedor-card-a .card-b .card-a p .card-a .card-b, .contenedor-card-a .card-b .card-b p .card-a .card-b, .contenedor-card-a .card-b .card-c p .card-a .card-b, .contenedor-card-a .card-c .card-a p .card-a .card-b, .contenedor-card-a .card-c .card-b p .card-a .card-b, .contenedor-card-a .card-c .card-c p .card-a .card-b {
+
+.card-b {
   width: 190px;
   height: 254px;
   border-radius: 30px;
-  background: #f7cf05;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
-.contenedor-card-a .card-a .card-a p .card-a .card-b .card-c, .contenedor-card-a .card-a .card-b p .card-a .card-b .card-c, .contenedor-card-a .card-a .card-c p .card-a .card-b .card-c, .contenedor-card-a .card-b .card-a p .card-a .card-b .card-c, .contenedor-card-a .card-b .card-b p .card-a .card-b .card-c, .contenedor-card-a .card-b .card-c p .card-a .card-b .card-c, .contenedor-card-a .card-c .card-a p .card-a .card-b .card-c, .contenedor-card-a .card-c .card-b p .card-a .card-b .card-c, .contenedor-card-a .card-c .card-c p .card-a .card-b .card-c {
+
+.card-c {
   width: 190px;
   height: 254px;
   border-radius: 30px;
-  background: #78bdfa;
+  background: orange;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+
+.card-a img {
+  max-width: 10px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.card-a img, .card-b img, .card-c img {
+  max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+  border-radius: 10px;
+}
+
+.card-b img, .card-c img {
+  max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 15px; /* Añade espacio debajo de la imagen */
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.contenedor {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  height: 40px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos de la lista */
+li {
+  list-style: none;
+}
+
+/* Estilos de los enlaces */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/*hover sirve para cambiar los colores de los botones cuando los estas seleccionenado en este caso los votones con likns, esto es parte de una seuda clase la cual cambia sus estados*/
+a:hover {
+  color: orange;
+}
+
+/*MAP*/
+.map {
+  padding: 5px;
+  background-color: #1d1d1d;
+}
+
+.cuadro {
+  width: 250px;
+  height: 370px;
+  background-color: rgb(255, 168, 7);
+  border: 1px solid black;
+  margin-right: 20px; /* Espacio entre los cuadros */
+  overflow: hidden; /* Oculta el contenido que excede los límites del cuadro */
+}
+
+.cuadros-container {
+  display: flex;
+  flex-wrap: wrap; /*para que los cuadros se pongan uno arriba del otro cuando se achica la pantalla*/
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px; /* Espacio alrededor de los cuadros */
+  margin-top: 10px; /* Desplazamiento hacia arriba */
+  overflow: hidden; /* Oculta el contenido que excede los límites del cuadro */
+  padding-top: 10px;
+}
+
+.imagen-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Oculta el contenido de la imagen que excede los límites del contenedor */
+}
+
+.inner-image-container img {
+  width: 100%; /* Ancho de la imagen dentro del contenedor */
+  height: 100%; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin deformarla */
+  display: block; /* Asegura que la imagen se muestre como bloque */
+}
+
+.home {
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.in-flex {
+  color: white;
+  flex: 1;
+  min-width: 300px;
+}
+
+.in-flex:first-child {
+  flex: 2;
+  padding: 25px;
+  background-color: hsl(0, 0%, 0%);
+  margin: 20px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.in-flex div {
+  padding: 25px;
+  background-color: hsl(0, 0%, 0%);
+  margin: 20px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
