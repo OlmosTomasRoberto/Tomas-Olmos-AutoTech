@@ -56,6 +56,14 @@ section#hero {
   margin-bottom: 1rem;
 }
 
+h1 {
+  flex: 1;
+  flex-wrap: wrap;
+  color: white;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
 .contenedor-card-b {
   display: flex;
   flex-wrap: wrap;
