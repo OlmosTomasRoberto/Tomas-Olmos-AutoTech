@@ -57,11 +57,7 @@ section#hero {
 }
 
 h1 {
-  flex: 1;
-  flex-wrap: wrap;
   color: white;
-  padding-top: 15px;
-  padding-left: 25px;
 }
 
 .contenedor-card-b {
